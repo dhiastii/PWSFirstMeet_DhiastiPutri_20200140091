@@ -33,6 +33,11 @@ public class GetdataJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public GetdataJpaController() {
+    }
+
+    
+    
     public void create(Getdata getdata) throws IllegalOrphanException, PreexistingEntityException, Exception {
         List<String> illegalOrphanMessages = null;
         Adminapp namaSekolahOrphanCheck = getdata.getNamaSekolah();
