@@ -33,6 +33,11 @@ public class KelasJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public KelasJpaController() {
+    }
+
+    
+    
     public void create(Kelas kelas) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
